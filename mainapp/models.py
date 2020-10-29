@@ -84,7 +84,8 @@ class Customer(models.Model):
 class Notebook(Product):
 
     diagonal = models.CharField(max_length=255, verbose_name='Diagonal')
-    display_type = models.CharField(max_length=255, verbose_name='Тип дисплея')
+    display_type = models.CharField(
+        max_length=255, verbose_name='Type od dyspley')
     processor_freq = models.CharField(
         max_length=255, verbose_name='CPU frequency')
     ram = models.CharField(max_length=255, verbose_name='RAM')
